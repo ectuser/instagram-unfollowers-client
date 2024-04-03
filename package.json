@@ -5,6 +5,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
+    "postbuild": "node append-date.js",
     "build": "vite build",
     "serve": "vite preview",
     "publish": "node publish.js",
