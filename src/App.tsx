@@ -46,7 +46,7 @@ const Table = ({users}: {users: User[]}) => {
       {users.map((user) => 
         <tr>
           <td>
-            <a href={user.link} target="_blank">user.username</a>
+            <a href={user.link} target="_blank">{user.username} &gt;</a>
           </td>
           <td>{user.name}</td>
         </tr>
