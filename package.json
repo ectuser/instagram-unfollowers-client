@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "release": "yarn build && node publish.js"
+    "publish": "node publish.js",
+    "release": "yarn build && yarn publish"
   },
   "license": "MIT",
   "devDependencies": {
