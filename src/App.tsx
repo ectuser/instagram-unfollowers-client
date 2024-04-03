@@ -1,4 +1,4 @@
-import { createEffect, type Component, createMemo, createSignal } from 'solid-js';
+import { type Component } from 'solid-js';
 import {
   Router,
   useSearchParams,
@@ -66,8 +66,7 @@ const Home = () => {
   
   
 
-  return <div style={{padding: '20px'}}>
-    <h1>Instagram unfollowers</h1>
+  return <div>
 
   <main class="container">
     {settings ? <Table users={settings} /> : 'No Data'}
@@ -79,9 +78,12 @@ const App: Component = () => {
   
 
   return (
-    <Router>
-      <Route path="/" component={Home} />
-    </Router>
+    <>
+      <h1>Instagram unfollowers</h1>
+      <Router base='/instagram-unfollowers-client/'>
+        <Route path="/" component={Home} />
+      </Router>
+    </>
   );
 };
 
