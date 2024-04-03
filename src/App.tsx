@@ -66,7 +66,9 @@ const Home = () => {
   
   
 
-  return <div>
+  return <div style={{padding: '20px'}}>
+    <h1>Instagram unfollowers</h1>
+
   <main class="container">
     {settings ? <Table users={settings} /> : 'No Data'}
   </main>
